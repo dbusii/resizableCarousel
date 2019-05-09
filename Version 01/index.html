@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>carousel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+	<div class="carousel">
+		<img name="slide1" width="400" height="400" usemap="#image-map">
+		
+		<map name ="image-map">
+			<area shape="rect" coords="200,0,400,400" id="right" onclick="changeImgRight1()">	
+			<area shape="rect" coords="0,0,200,400" id="left" onclick="changeImgLeft1()">	
+		</map>
+	</div>
+
+	<script type="text/javascript" src="image-map.min.js"></script>
+	<script type="text/javascript">
+		ImageMap('img[usemap]')
+	</script>
+
+</body>
+</html>
